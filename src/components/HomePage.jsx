@@ -3,9 +3,11 @@ import Content from "./Content";
 
 function HomePage() {
   return (
-    <div>
-      <Header />
-      <Content />
+    <div className=" bg-background-main">
+      <div className="h-screen">
+        <Header />
+        <Content />
+      </div>
     </div>
   );
 }
