@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
+import MyFriends from "./MyFriends";
 
 function HomePage() {
   return (
@@ -8,6 +9,7 @@ function HomePage() {
       <div className="h-screen">
         <Header />
         <Content />
+        <MyFriends/>
         <hr />
         <Footer/>
       </div>
