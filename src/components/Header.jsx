@@ -1,29 +1,29 @@
+import { Link } from "react-router-dom";
+
 function Header() {
+
   return (
     <>
-      <div className="flex justify-between items-center h-16 bg-cat">
-        <p className="text-3xl ml-4 text-light-green cursor-pointer">
+      <div className="flex justify-between items-center h-16 bg-cat ">
+        <Link to='/home' className="text-3xl ml-4 text-light-green cursor-pointer">
           N a s t a r a n
-        </p>
+        </Link>
         <div>
-          <img src="./public/hamburger.svg" className="flex sm:hidden"/>
+          <img src="./public/hamburger.svg" className="flex sm:hidden" />
         </div>
         <ul className="hidden list-none sm:flex">
-          <li className="sm:mr-6 lg:mr-20 hover:text-light-green cursor-pointer">
+          <Link to='/' className="sm:mr-6 lg:mr-20 hover:text-light-green cursor-pointer">
             Home
-          </li>
-
-          <li className="sm:mr-6 lg:mr-20 hover:text-light-green cursor-pointer">
+          </Link>
+          <Link className="sm:mr-6 lg:mr-20 hover:text-light-green cursor-pointer">
             Connect Me
-          </li>
-
-          <li className="sm:mr-6 lg:mr-20 hover:text-light-green cursor-pointer">
+          </Link>
+          <Link to='/works' className="sm:mr-6 lg:mr-20 hover:text-light-green cursor-pointer">
             Works
-          </li>
-
-          <li className="sm:mr-6 lg:mr-20 hover:text-light-green cursor-pointer">
+          </Link>
+          <Link to='contact' className="sm:mr-6 lg:mr-20 hover:text-light-green cursor-pointer">
             Contact
-          </li>
+          </Link>
         </ul>
       </div>
     </>

@@ -8,7 +8,7 @@ function Content() {
       <div>
         <ImageContent />
       </div>
-      <div className=" self-center">
+      <div className="self-center">
         <DescriptionContent />
       </div>
       <div className="mt-4 self-center">

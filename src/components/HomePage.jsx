@@ -1,17 +1,15 @@
-import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
 import MyFriends from "./MyFriends";
 
-function HomePage() {
+function HomePage({ friends, classList }) {
   return (
-    <div className=" bg-background-main">
+    <div>
       <div className="h-screen">
-        <Header />
         <Content />
-        <MyFriends/>
+        <MyFriends classList={classList} friends={friends} />
         <hr />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
